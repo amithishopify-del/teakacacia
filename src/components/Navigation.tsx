@@ -10,7 +10,7 @@ const Navigation = () => {
     { label: "Shop", href: "#shop" },
     { label: "Collections", href: "#collections" },
     { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -23,7 +23,7 @@ const Navigation = () => {
               <img 
                 src={logo} 
                 alt="Teakacacia - Design Your Dreams" 
-                className="h-12 w-auto transition-smooth group-hover:scale-105"
+                className="h-16 w-auto transition-smooth group-hover:scale-105"
               />
             </a>
           </div>
