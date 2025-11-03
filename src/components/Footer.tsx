@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import logo from "@/assets/teakacacia-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,14 +32,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="text-primary">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-                  <path d="M16 2L4 8v12c0 7.5 5.2 14 12 16 6.8-2 12-8.5 12-16V8L16 2zm0 4.2l8 4.8v9c0 5.2-3.5 10-8 11.8-4.5-1.8-8-6.6-8-11.8v-9l8-4.8z"/>
-                  <circle cx="16" cy="14" r="3"/>
-                </svg>
-              </div>
-              <span className="heading-font text-xl font-semibold">Teakacacia</span>
+            <div className="mb-6">
+              <img 
+                src={logo} 
+                alt="Teakacacia - Design Your Dreams" 
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Crafting timeless furniture from premium teak and acacia wood. Where modern design meets natural elegance.

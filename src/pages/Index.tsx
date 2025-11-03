@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Categories from "@/components/Categories";
+import AboutUs from "@/components/AboutUs";
 import PlaceholderSection from "@/components/PlaceholderSection";
 import Footer from "@/components/Footer";
 
@@ -11,19 +13,9 @@ const Index = () => {
       <main>
         <Hero />
         
-        <PlaceholderSection
-          id="collections"
-          title="Featured Collections"
-          description="Explore our curated selection of handcrafted furniture pieces, each telling a story of exceptional design and sustainable sourcing."
-        />
+        <Categories />
         
-        <div className="bg-muted/20">
-          <PlaceholderSection
-            id="about"
-            title="Our Philosophy"
-            description="At Teakacacia, we believe in creating furniture that transcends trends. Every piece is a testament to our commitment to quality, sustainability, and timeless design."
-          />
-        </div>
+        <AboutUs />
         
         <PlaceholderSection
           id="shop"

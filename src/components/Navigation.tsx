@@ -1,6 +1,7 @@
 import { Menu, Search, ShoppingCart, User, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import logo from "@/assets/teakacacia-logo.png";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,14 +19,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center space-x-2 group">
-              <div className="text-primary transition-smooth group-hover:scale-105">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-                  <path d="M16 2L4 8v12c0 7.5 5.2 14 12 16 6.8-2 12-8.5 12-16V8L16 2zm0 4.2l8 4.8v9c0 5.2-3.5 10-8 11.8-4.5-1.8-8-6.6-8-11.8v-9l8-4.8z"/>
-                  <circle cx="16" cy="14" r="3"/>
-                </svg>
-              </div>
-              <span className="heading-font text-xl font-semibold text-foreground">Teakacacia</span>
+            <a href="/" className="flex items-center group">
+              <img 
+                src={logo} 
+                alt="Teakacacia - Design Your Dreams" 
+                className="h-12 w-auto transition-smooth group-hover:scale-105"
+              />
             </a>
           </div>
 
