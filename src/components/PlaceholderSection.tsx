@@ -25,7 +25,7 @@ const PlaceholderSection = ({ title, description, id }: PlaceholderSectionProps)
           {[1, 2, 3].map((item) => (
             <div
               key={item}
-              className="aspect-square bg-muted rounded-sm shadow-soft hover:shadow-hover transition-smooth animate-fade-in"
+              className="aspect-square bg-muted rounded-sm shadow-soft hover:shadow-hover transition-all duration-500 animate-fade-in hover:-translate-y-2"
               style={{ animationDelay: `${item * 100}ms` }}
             >
               <div className="w-full h-full flex items-center justify-center">

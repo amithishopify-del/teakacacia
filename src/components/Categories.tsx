@@ -53,35 +53,35 @@ const Categories = () => {
         </div>
 
         {/* Category Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <a
               key={category.name}
               href="#shop"
-              className="group relative overflow-hidden rounded-sm bg-muted hover:shadow-hover transition-smooth animate-fade-in"
+              className="group relative overflow-hidden rounded-sm bg-card border border-border hover:shadow-hover transition-all duration-500 animate-fade-in hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Image Placeholder */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center">
-                <span className="text-4xl text-muted-foreground/20 heading-font">
+              <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center overflow-hidden">
+                <span className="text-4xl text-muted-foreground/20 heading-font transition-transform duration-500 group-hover:scale-110">
                   {category.name}
                 </span>
               </div>
               
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 bg-card">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="heading-font text-2xl font-medium text-foreground group-hover:text-primary transition-smooth">
+                  <h3 className="heading-font text-2xl font-medium text-foreground transition-transform duration-300">
                     {category.name}
                   </h3>
-                  <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-smooth" />
+                  <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:translate-x-1 transition-all duration-300" />
                 </div>
                 
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                   {category.description}
                 </p>
                 
-                <div className="text-sm text-primary font-medium">
+                <div className="text-sm text-primary font-medium tracking-wide">
                   {category.count}
                 </div>
               </div>

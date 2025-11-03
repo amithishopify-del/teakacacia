@@ -34,7 +34,7 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-smooth text-sm tracking-wide relative group"
+                className="text-foreground/80 transition-smooth text-sm tracking-wide relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -44,13 +44,13 @@ const Navigation = () => {
 
           {/* Utility Icons */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="hidden sm:flex hover:text-primary">
+            <Button variant="ghost" size="icon" className="hidden sm:flex">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
+            <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hidden sm:flex hover:text-primary">
+            <Button variant="ghost" size="icon" className="hidden sm:flex">
               <User className="h-5 w-5" />
             </Button>
             
@@ -74,7 +74,7 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-smooth py-2"
+                  className="text-foreground transition-smooth py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

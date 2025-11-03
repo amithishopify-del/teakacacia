@@ -52,7 +52,7 @@ const Footer = () => {
                   placeholder="Your email"
                   className="flex-1 px-4 py-2 border border-border rounded-sm bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
-                <button className="px-6 py-2 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 transition-smooth">
+                <button className="px-6 py-2 bg-primary text-primary-foreground rounded-sm hover:scale-105 transition-all duration-300">
                   Join
                 </button>
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-smooth"
+                    className="text-muted-foreground transition-smooth relative inline-block after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-smooth"
+                    className="text-muted-foreground transition-smooth relative inline-block after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {link.label}
                   </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-smooth"
+                    className="text-muted-foreground transition-smooth relative inline-block after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {link.label}
                   </a>
@@ -119,28 +119,28 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className="text-muted-foreground transition-transform duration-300 hover:scale-110"
               aria-label="Instagram"
             >
               <Instagram className="h-5 w-5" />
             </a>
             <a
               href="#"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className="text-muted-foreground transition-transform duration-300 hover:scale-110"
               aria-label="Facebook"
             >
               <Facebook className="h-5 w-5" />
             </a>
             <a
               href="#"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className="text-muted-foreground transition-transform duration-300 hover:scale-110"
               aria-label="Twitter"
             >
               <Twitter className="h-5 w-5" />
             </a>
             <a
               href="#"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className="text-muted-foreground transition-transform duration-300 hover:scale-110"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
