@@ -23,7 +23,7 @@ const Navigation = () => {
               <img 
                 src={logo} 
                 alt="Teakacacia - Design Your Dreams" 
-                className="h-16 w-auto transition-smooth group-hover:scale-105"
+                className="h-24 w-auto transition-smooth group-hover:scale-105"
               />
             </a>
           </div>
